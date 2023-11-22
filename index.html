@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project: Library</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="container" id="container">
+        <div class="header" id="header">
+            <h1>My Library</h1>
+            <button class="button" id="newBook">New Book</button>
+        </div>
+  
+        <dialog id="dialog">
+       
+        <div id="pop-up">
+            <h1>Add a book</h1>
+            <input type="text" placeholder="title" id="title" required>
+            <input type="text" placeholder="author" id="author">
+            <input type="number" placeholder="pages" id="pages">
+            <input type="number" placeholder="year" id="year">
+            <button  id="add" onclick="createCard(); addBookToLibrary();">Add</button>
+            <button  id="close" onclick="resetInputFields()">X</button>
+        
+        </div>
+     
+        </dialog>
+
+        <div class="wrapper" id="wrapper">
+    
+        </div>
+    </div>
+    <script src="script.js"></script>  
+</body>
+</html>
